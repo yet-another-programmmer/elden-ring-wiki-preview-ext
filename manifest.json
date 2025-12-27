@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Wiki Infobox Previewer",
+  "version": "1.0",
+  "permissions": ["scripting"],
+  "host_permissions": ["https://eldenring.wiki.fextralife.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://eldenring.wiki.fextralife.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

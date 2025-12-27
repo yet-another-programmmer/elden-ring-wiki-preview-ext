@@ -1,0 +1,22 @@
+#wiki-preview-overlay {
+    position: fixed; /* Stays in the same place even when scrolling */
+    top: 128px;       /* 128px from the top of the screen */
+    right: 20px;     /* 20px from the right of the screen */
+    z-index: 10000;
+    background: #222;
+    color: #eee;
+    border: 1px solid #c8aa6e;
+    padding: 15px;
+    max-width: 400px;
+    max-height: 80vh; /* Limits height to 80% of the screen height */
+    overflow-y: auto;
+    display: none;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+    pointer-events: none; /* Prevents flickering when mouse hits the box */
+}
+
+/* Ensure images inside the infobox don't break the layout */
+#wiki-preview-overlay img {
+    max-width: 100%;
+    height: auto;
+}
