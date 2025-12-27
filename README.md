@@ -6,5 +6,6 @@
 
 # Use
 
-Hover over name of item, weapon, location, skill etc
+1. Visit a page on [eldenring.wiki.fextralife.com](eldenring.wiki.fextralife.com)
+2. Hover over name of item, weapon, location, skill etc
 
